@@ -11,7 +11,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -41,6 +42,16 @@
     </div>
   </nav>
 
+  <!--Cursos-->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-6">Conheça Nossos Cursos</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
   <div class="container-fluid padding">
     <div class="row padding founders">
 
@@ -48,7 +59,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Acordeon</h4>
-            <img src="img/instrumentos/acordeon.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/acordeon.png" class="card-img-top" data-toggle="collapse" data-target="#acordeon" onclick="acordeon()">
           </div>
         </div>
       </div>
@@ -57,7 +68,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 mb-4 text-center">Bateria</h4>
-            <img src="img/instrumentos/bateria2.png" class="card-img-top">
+            <img src="img/instrumentos/bateria2.png" class="card-img-top" data-toggle="collapse" data-target="#bateria" onclick="bateria()">
           </div>
         </div>
       </div>
@@ -66,7 +77,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Canto</h4>
-            <img src="img/instrumentos/mic.png" class="card-img-top">
+            <img src="img/instrumentos/mic.png" class="card-img-top" data-toggle="collapse" data-target="#canto" onclick="canto()">
           </div>
         </div>
       </div>
@@ -75,26 +86,29 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Contrabaixo</h4>
-            <img src="img/instrumentos/baixo.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/baixo.png" class="card-img-top" data-toggle="collapse" data-target="#contrabaixo" onclick="contrabaixo()">
           </div>
         </div>
       </div>
 
-      <div class="card-body collapse" id="info">
-        <p class="card-text">Formado pelo Conservatório Estadual de Música de Varginha
-          onde também lecionou por 5 anos. Em sua carreira acumula prêmios como o do Festival
-          Nacional da Canção, além de participar de diversos projetos musicais. Em 2018 entrou
-          como
-          violinista para a aclamada banda Thuata de Dannan, fazendo diversas turnês nacionais e
-          internacionais.
-        </p>
+      <div id="acordeon" class="collapse">
+        <p class="mx-5" id="acordeon-p"></p>
+      </div>
+      <div id="bateria" class="collapse">
+        <p class="mx-5" id="bateria-p"></p>
+      </div>
+      <div id="canto" class="collapse">
+        <p class="mx-5" id="canto-p"></p>
+      </div>
+      <div id="contrabaixo" class="collapse">
+        <p class="mx-5" id="contrabaixo-p"></p>
       </div>
 
       <div class="col-md-3">
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Flauta</h4>
-            <img src="img/instrumentos/flaute.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/flaute.png" class="card-img-top" data-toggle="collapse" data-target="#flauta" onclick="flauta()">
           </div>
         </div>
       </div>
@@ -103,7 +117,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Guitarra</h4>
-            <img src="img/instrumentos/guitarra.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/guitarra.png" class="card-img-top" data-toggle="collapse" data-target="#guitarra" onclick="guitarra()">
           </div>
         </div>
       </div>
@@ -112,7 +126,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Musicalização</h4>
-            <img src="img/instrumentos/musicalizacao.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/musicalizacao.png" class="card-img-top" data-toggle="collapse" data-target="#musicalizacao" onclick="musicalizacao()">
           </div>
         </div>
       </div>
@@ -121,16 +135,30 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 mb-4 text-center">Percussão</h4>
-            <img src="img/instrumentos/percussao.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/percussao.png" class="card-img-top" data-toggle="collapse" data-target="#percussao" onclick="percussao()">
           </div>
         </div>
       </div>
+
+      <div id="flauta" class="collapse">
+        <p class="mx-5" id="flauta-p"></p>
+      </div>
+      <div id="guitarra" class="collapse">
+        <p class="mx-5" id="guitarra-p"></p>
+      </div>
+      <div id="musicalizacao" class="collapse">
+        <p class="mx-5" id="musicalizacao-p"></p>
+      </div>
+      <div id="percussao" class="collapse">
+        <p class="mx-5" id="percussao-p"></p>
+      </div>
+
 
       <div class="col-md-3">
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Teclado</h4>
-            <img src="img/instrumentos/teclado.png" class="card-img-top">
+            <img src="img/instrumentos/teclado.png" class="card-img-top" data-toggle="collapse" data-target="#teclado" onclick="teclado()">
           </div>
         </div>
       </div>
@@ -139,7 +167,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Violão</h4>
-            <img src="img/instrumentos/violao.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/violao.png" class="card-img-top" data-toggle="collapse" data-target="#violao" onclick="violao()">
           </div>
         </div>
       </div>
@@ -148,7 +176,7 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Violino</h4>
-            <img src="img/instrumentos/violin.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/violin.png" class="card-img-top" data-toggle="collapse" data-target="#violino" onclick="violino()">
           </div>
         </div>
       </div>
@@ -157,9 +185,22 @@
         <div class="col-12 mx-auto">
           <div class="card">
             <h4 class="card-title mt-3 text-center">Ukulele</h4>
-            <img src="img/instrumentos/ukulele.png" class="card-img-top" data-toggle="collapse" data-target="#info">
+            <img src="img/instrumentos/ukulele.png" class="card-img-top" data-toggle="collapse" data-target="#ukulele" onclick="ukulele()">
           </div>
         </div>
+      </div>
+
+      <div id="teclado" class="collapse">
+        <p class="mx-5" id="teclado-p"></p>
+      </div>
+      <div id="violao" class="collapse">
+        <p class="mx-5" id="violao-p"></p>
+      </div>
+      <div id="violino" class="collapse">
+        <p class="mx-5" id="violino-p"></p>
+      </div>
+      <div id="ukulele" class="collapse">
+        <p class="mx-5" id="ukulele-p"></p>
       </div>
 
     </div>
