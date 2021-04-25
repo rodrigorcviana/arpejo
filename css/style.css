@@ -6,6 +6,7 @@ html, body{
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+
 /*Navigation*/
 .navbar{
   padding: .8rem;
@@ -273,7 +274,26 @@ figure {
 }
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #211f2e; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #312f3d; 
+}
 
 
 /*

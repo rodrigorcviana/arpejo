@@ -1,19 +1,19 @@
-div .img-fluid{
+div .img-fluid {
     width: 100%;
     height: 100%;
 }
 
-.banner{
+.banner {
     width: 100%;
 }
 
-.banner-caption{
+.banner-caption {
     position: absolute;
     top: 50%;
     left: 25%;
 }
 
-.banner-caption h1{
+.banner-caption h1 {
     font-size: 500%;
     text-transform: uppercase;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -21,42 +21,79 @@ div .img-fluid{
     text-shadow: 1px 1px 15px #000;
 }
 
-.purple{
+.purple {
     width: 75%;
     border-top: 2px solid #837baf;
 }
 
-.video{
+.video {
     width: 75%;
     justify-content: center;
 }
 
+
+/*-- Specials --*/
+
+.julia {
+    font-size: 0.9rem;
+}
+
+.mateus {
+    font-size: 0.97rem;
+}
+
+.highlight {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+}
+
+.highlight:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+
 /*---Media Queries --*/
+
 @media (max-width: 992px) {
-    .banner-caption h1{
+    .banner-caption h1 {
         font-size: 350%;
-    }    
-    .banner-caption{
+    }
+    .banner-caption {
         top: 45%;
+    }
+    .names {
+        font-size: 1.2rem;
+    }
+    .releases {
+        font-size: 0.75rem;
+    }
+    .mateus {
+        font-size: 0.6rem;
+    }
+    .julia {
+        font-size: 0.6rem;
     }
 }
 
 @media (max-width: 768px) {
-    .banner-caption{
+    .banner-caption {
         top: 40%;
     }
-    
-    .banner-caption h1{
+    .banner-caption h1 {
         font-size: 250%;
-    }    
+    }
+    .mateus {
+        font-size: 0.75rem;
+    }
+    .julia {
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width: 576px) {
-    .banner-caption{
+    .banner-caption {
         top: 35%;
     }
-    
-    .banner-caption h1{
+    .banner-caption h1 {
         font-size: 150%;
     }
 }
