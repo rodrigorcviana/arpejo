@@ -34,7 +34,7 @@ try {
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
   $mail->Username = 'rodrigorcviana@gmail.com';
-  $mail->Password = 'CA98564102lsd';
+  $mail->Password = 'senha';
   $mail->Port=587;
 
   $mail->setFrom('rodrigorcviana@gmail.com');
